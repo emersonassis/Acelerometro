@@ -64,26 +64,6 @@ public class Acelerometro extends Activity implements SensorEventListener{
 
     }
 
-    /* Verificando se existe camera no celular */
-    public boolean checkCamera(Context c){
-
-        boolean retorno = false;
-
-        if (c.getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA)){
-            retorno = true;
-        }
-
-        return retorno;
-    }
-
-    /* Obtendo instancia da camera  */
-    public CameraManager getCamera(){
-
-        cam = (CameraManager) getSystemService(Context.CAMERA_SERVICE);
-        return null;
-
-    }
-
     @Override
     public void onResume(){
         super.onResume();
